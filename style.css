@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #ff7eb3, #1b1b3a);
+    color: white;
+    overflow-x: hidden;
+}
+section {
+    margin: 60px auto;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    animation: fadeUp 1.5s ease;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.heart {
+    position: fixed;
+    bottom: -20px;
+    animation: floatUp 6s linear forwards;
+    text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff85a1;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #ff4d6d;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffe6ea;
+}
+
+.hidden {
+    display: none;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.password-screen {
+    height: 100vh;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-screen input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 20px;
+    animation: floatUp 5s linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.welcome h1 {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { text-shadow: 0 0 10px pink; }
+    50% { text-shadow: 0 0 30px hotpink; }
+    100% { text-shadow: 0 0 10px pink; }
+}
+.photos img {
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.photos img:hover {
+    transform: scale(1.08) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(255,105,180,0.6);
+}
+
